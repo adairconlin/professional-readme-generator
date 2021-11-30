@@ -48,7 +48,7 @@ const questions = () => {
         {
             type: "input",
             name: "usage",
-            message: "Provide instruction and examples for use.",
+            message: "Provide instruction and examples for use:",
             validate: usageInput => {
                 if(usageInput) {
                     return true;
@@ -76,11 +76,6 @@ const questions = () => {
                 }
             }
         },
-        // {
-        //     type: "input",
-        //     name: "contributions",
-        //     message: ""
-        // },
         {
             type: "confirm",
             name: "licenseConfirm",
@@ -88,7 +83,7 @@ const questions = () => {
             default: false
         },
         {
-            type: "checkbox",
+            type: "list",
             name: "license",
             message: "Please select the license you would like to apply:",
             choices:  ["MIT", "Apache", "Apache2", "ISC", "GNU"],
@@ -96,6 +91,24 @@ const questions = () => {
                 if(licenseConfirm) {
                     return true;
                 } else {
+                    return false;
+                }
+            }
+        },
+        {
+            type: "input",
+            name: "contributions",
+            message: "Please add contributing guidelines for this project:"
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "Please provide tests for your application as well as how to run them:",
+            validate: testInput => {
+                if(testInput) {
+                    return true;
+                } else {
+                    console.log("Please provide tests for your project.");
                     return false;
                 }
             }
