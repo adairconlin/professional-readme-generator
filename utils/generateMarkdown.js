@@ -1,18 +1,20 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
+  if(!data.licenseConfirm) {
+    return '';
+  }
+
+  let license = data.license.replace(" ", "%20");
   return `
-![license-badge](https://img.shields.io/badge/license-${data.license}-blue)
+![license-badge](https://img.shields.io/badge/license-${license}-blue)
   `
-  
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(data) {
-  return `
-  This application is covered by the ${data.license} license. View this license [here](https://img.shields.io/badge/license-${data.license}-blue)
-  `
+  // When I asked about this function, the instructor couldn't find what sort of link was necessary to use. It seemed as though any sort of hyperlink was unnecessary as long has the badge was being displayed based on the challenge so I'm leaving this function out.
 }
 
 // TODO: Create a function that returns the license section of README
@@ -24,8 +26,7 @@ function renderLicenseSection(data) {
 
   return `
 ## License
-${renderLicenseBadge(data)}
-${renderLicenseLink(data)}
+This project is licensed under the ${data.license} license.
   `
 }
 
@@ -43,6 +44,7 @@ function renderImage(data) {
 function generateMarkdown(data) {
   return `
 # ${data.projectTitle}
+${renderLicenseBadge(data)}
 ## Description
 ${data.projectDescription}
 

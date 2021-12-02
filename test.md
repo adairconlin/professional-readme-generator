@@ -16,7 +16,7 @@ After both Node.js and the Inquirer package has been installed, you can type `no
 ./imgs/sample.jpg
   
 ## Contributing
-?
+Write whatever contribution guidelines your would like for this project when using this application. You can also just include The [Contributor Covenant](https://www.contributor-covenant.org/) which is an industry standard.
 
 ## Tests
 In order to test this product out, navigate to this projects `test.md` file. Use the default text to generate a README file to see how the prompts work. Make sure to read both the `Usage` and `Installation` section before testing. <br><br> You can also test out prompt validation by leaving questions blank or answering Y/n questions incorrectly in order to see how the application responds.

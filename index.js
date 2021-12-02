@@ -86,7 +86,7 @@ const questions = () => {
             type: "list",
             name: "license",
             message: "Please select the license you would like to apply:",
-            choices:  ["MIT", "Apache", "Apache2", "ISC", "GNU"],
+            choices:  ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3"],
             when: ({licenseConfirm}) => {
                 if(licenseConfirm) {
                     return true;
