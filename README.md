@@ -17,9 +17,7 @@ Having a high-quality README for any application is important. It can make or br
 ## Installation
 In order to use this project, you can first clone this repository onto your own system. Make sure you have a `.gitignore` file in the projects root directory with `node_modules` inside of it. Then you will have to add both node.js and Inquirer, which this project requires. Simply enter the command `npm init` to initialize node.js in the projects root directory. Then enter the command `node install inquirer` in the projects root directory order to install the Inquirer package.
 ## Usage
-After both Node.js and the Inquirer package has been installed, you can type `node index.js` in order to start the application. Respond to the prompts accordingly. When the prompts are complete, head over to the README file to see the outcome of your responses. Feel free to copy and paste the contents of the generated README file into your own projects README file.
-
-![website-preview](./imgs/sample.jpg)
+After both Node.js and the Inquirer package has been installed, you can type `node index` in order to start the application. Respond to the prompts accordingly. When the prompts are complete, head over to the README file to see the outcome of your responses. Feel free to copy and paste the contents of the generated README file into your own projects README file. Watch this video walkthrough as an example of how the application works.
   
 
 ## License

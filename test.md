@@ -12,7 +12,7 @@ In order to use this project, you can first clone this repository onto your own 
 ## Usage
 After both Node.js and the Inquirer package has been installed, you can type `node index.js` in order to start the application. Respond to the prompts accordingly. When the prompts are complete, head over to the README file to see the outcome of your responses. Feel free to copy and paste the contents of the generated README file into your own projects README file.
 
-## Relative Path for Image
+## Relative Path for Video
 ./imgs/sample.jpg
   
 ## Contributing
